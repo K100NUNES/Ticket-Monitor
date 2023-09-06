@@ -31,8 +31,11 @@ jobs:
           pip install Pillow
 
       - name: Execute Notebook
+        env:
+          SLACK_TOKEN: ${{ secrets.SLACK_TOKEN }}  # Acesso ao segredo do Slack
+          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}  # Canal do Slack
         run: |
-          jupyter nbconvert --to notebook --execute monitor.ipynb
+          jupyter nbconvert --to notebook --execute monitor.ipynb          
 
       - name: Commit and Push Changes
         run: |
