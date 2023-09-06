@@ -36,7 +36,7 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git config --global user.name "Kassen Nunes"
+          git config --global user.name "K100NUNES"
           git config --global user.email "kassen.nunes@gmail.com"
           git commit -am "Executou o notebook"
           git push
