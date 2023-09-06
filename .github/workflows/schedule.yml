@@ -17,10 +17,10 @@ jobs:
         with:
           python-version: 3.8
 
-    - name: Install dependencies
-      run: |
-        pip install slack-sdk
-        pip install selenium
+      - name: Install dependencies
+        run: |
+          pip install slack-sdk
+          pip install selenium
 
       - name: Execute Notebook
         run: jupyter nbconvert --to notebook --execute monitor.ipynb
