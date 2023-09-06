@@ -38,5 +38,6 @@ jobs:
         run: |
           git config --global user.name "K100NUNES"
           git config --global user.email "kassen.nunes@gmail.com"
-          git commit -am "Executou o notebook"
+          git add .
+          git commit -m "Executou o notebook"
           git push
