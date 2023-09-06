@@ -10,3 +10,6 @@
 [2023-09-06 18:54:54] Erro ao enviar screenshot inicial para o Slack: invalid_auth
 [2023-09-06 18:54:55] Nenhuma alteração significativa foi detectada na página.
 [2023-09-06 18:54:55] Erro ao enviar mensagem de status para o Slack: invalid_auth
+[2023-09-06 19:09:54] Erro ao enviar screenshot inicial para o Slack: account_inactive
+[2023-09-06 19:09:55] Nenhuma alteração significativa foi detectada na página.
+[2023-09-06 19:09:55] Erro ao enviar mensagem de status para o Slack: account_inactive
