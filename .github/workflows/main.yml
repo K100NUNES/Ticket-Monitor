@@ -1,0 +1,43 @@
+name: Schedule Colab Notebook Execution
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"  # Executar a cada 1 minutos
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set Up Python
+        uses: actions/setup-python@v4 
+        with:
+          python-version: 3.11.4
+
+      - name: Create Virtual Environment
+        run: python -m venv venv
+
+      - name: Activate Virtual Environment
+        run: source venv/bin/activate
+
+      - name: Install dependencies
+        run: |
+          pip install slack-sdk
+          pip install selenium
+          pip install jupyter
+          pip install Pillow
+
+      - name: Execute Notebook
+        run: |
+          jupyter nbconvert --to notebook --execute monitor.ipynb
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "K100NUNES"
+          git config --global user.email "kassen.nunes@gmail.com"
+          git add .
+          git commit -m "Executou o notebook"
+          git push
