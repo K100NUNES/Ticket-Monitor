@@ -1,0 +1,31 @@
+name: Schedule Colab Notebook Execution
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"  # Executar a cada meia hora
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set Up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt  # Se necessário
+
+      - name: Execute Notebook
+        run: jupyter nbconvert --to notebook --execute monitor.ipynb
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "Kassen Nunes"
+          git config --global user.email "kassen.nunes@gmail.com"
+          git commit -am "Executou o notebook"
+          git push
