@@ -1,4 +1,4 @@
-name: Schedule Colab Notebook Execution
+name: Colab Notebook Execution
 
 on:
   schedule:
