@@ -28,6 +28,7 @@ jobs:
           pip install slack-sdk
           pip install selenium
           pip install jupyter
+          pip install Pillow
 
       - name: Execute Notebook
         run: |
