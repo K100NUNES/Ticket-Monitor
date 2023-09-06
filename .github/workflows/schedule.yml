@@ -17,8 +17,11 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Install Dependencies
-        run: pip install -r requirements.txt  # Se necessário
+    - name: Install dependencies
+      run: |
+        pip install slack-sdk
+        pip install selenium
+        # Outras instalações, se necessário
 
       - name: Execute Notebook
         run: jupyter nbconvert --to notebook --execute monitor.ipynb
