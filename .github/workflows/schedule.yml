@@ -2,7 +2,7 @@ name: Schedule Colab Notebook Execution
 
 on:
   schedule:
-    - cron: "*/1 * * * *"  # Executar a cada 1 minutos
+    - cron: "*/5 * * * *"  # Executar a cada 1 minutos
 
 jobs:
   build:
