@@ -41,6 +41,3 @@ jobs:
           git add .
           git commit -m "Executou o notebook"
           git push   
-          # git push https://x-access-token:${{ secrets.MONITOR }}@github.com/K100NUNES/Ticket-Monitor.git HEAD:main
-
-          
