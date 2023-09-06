@@ -41,6 +41,6 @@ jobs:
           git add .
           git commit -m "Executou o notebook"
           git push
-          git push https://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:${{ secrets.GH_TOKEN }}@github.com/K100NUNES/Ticket-Monitor.git HEAD:main
+          git push https://x-access-token:${{ secrets.MONITOR }}@github.com/K100NUNES/Ticket-Monitor.git HEAD:main
 
           
