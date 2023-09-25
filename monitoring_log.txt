@@ -6670,3 +6670,6 @@
 [2023-09-25 10:39:20] Erro ao enviar screenshot inicial para o Slack: account_inactive
 [2023-09-25 10:39:22] Nenhuma alteração significativa foi detectada na página.
 [2023-09-25 10:39:22] Erro ao enviar mensagem de status para o Slack: account_inactive
+[2023-09-25 10:48:13] Erro ao enviar screenshot inicial para o Slack: account_inactive
+[2023-09-25 10:48:14] Nenhuma alteração significativa foi detectada na página.
+[2023-09-25 10:48:14] Erro ao enviar mensagem de status para o Slack: account_inactive
