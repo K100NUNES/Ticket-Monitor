@@ -28561,3 +28561,6 @@
 [2023-11-26 22:10:42] Erro ao enviar screenshot inicial para o Slack: account_inactive
 [2023-11-26 22:10:43] Nenhuma alteração significativa foi detectada na página.
 [2023-11-26 22:10:43] Erro ao enviar mensagem de status para o Slack: account_inactive
+[2023-11-26 22:25:53] Erro ao enviar screenshot inicial para o Slack: account_inactive
+[2023-11-26 22:25:54] Nenhuma alteração significativa foi detectada na página.
+[2023-11-26 22:25:54] Erro ao enviar mensagem de status para o Slack: account_inactive
